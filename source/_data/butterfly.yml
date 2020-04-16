@@ -5,13 +5,13 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  首页: / || fa fa-home
-  文章: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  链接: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
-  另||fa fa-list:
+  Home: / || fa fa-home
+  Archives: /archives/ || fa fa-archive
+  Tags: /tags/ || fa fa-tags
+  Categories: /categories/ || fa fa-folder-open
+  Link: /link/ || fa fa-link
+  About: /about/ || fa fa-heart
+  List||fa fa-list:
     - Music || /music/ || fa fa-music
     - Movie || /movies/ || fa fa-film
 
@@ -38,7 +38,7 @@ highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
 
-code_word_wrap: false
+code_word_wrap: true
 
 # copy setting
 # 是否禁止複製（如果禁止，highlight_copy的功能將無效)
@@ -154,8 +154,8 @@ lodding_bg:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: '努力过后依旧没有找到页面'
   background:
 
 post_meta:

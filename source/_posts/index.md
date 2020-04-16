@@ -1,9 +1,24 @@
+---
+title:天使爱美丽
+date:19.12
+type:"tags"
+tags:
+categories:
+keywords:
+description:
 
+comments  是否显示评论(除非设置false,可以不写)
+cover:  https://i.loli.net/2020/04/16/6v5UeyhaTRkVufK.png
+
+
+mathjax:
+katex:
+hide:
 ---
 layout: post
 title: diyici
 excerpt: wzr
-photos: https://i.loli.net/2020/04/16/6v5UeyhaTRkVufK.png
+photos: 
 ---
 Headings:
 

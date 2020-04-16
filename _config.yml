@@ -91,11 +91,11 @@ include:
 exclude:
 ignore:
 
-
- # Extensions
-    ## Plugins: https://hexo.io/plugins/
-    ## Themes: https://hexo.io/themes/
-    theme: Mic
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+ 
+    theme: laughing
 
 
 

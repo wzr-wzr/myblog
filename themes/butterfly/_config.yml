@@ -52,8 +52,8 @@ copy:
 #   icon: link || the description
 # ---------------
 social:
-  fa fa-github: https://github.com/wzr-wzr || Github
-  fa fa-envelope: mailto:2021986471@qq.com || Email
+  fa fa-github: https://github.com/jerryc127 || Github
+  fa fa-envelope: mailto:xxxxxxx@gmail.com || Email
   fa fa-rss: /atom.xml || RSS
 
 ####    search    ####
@@ -466,7 +466,7 @@ beautify:
   title-prefix-icon-color: '#F47466'
 
 # 全局字體
-font:"FangSong"
+font:
   enable: false
   font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
   code-font: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number

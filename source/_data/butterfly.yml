@@ -5,13 +5,13 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
-  Tags: /tags/ || fa fa-tags
-  Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
-  About: /about/ || fa fa-heart
-  List||fa fa-list:
+  首页: / || fa fa-home
+  文章: /archives/ || fa fa-archive
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-folder-open
+  链接: /link/ || fa fa-link
+  关于: /about/ || fa fa-heart
+  另||fa fa-list:
     - Music || /music/ || fa fa-music
     - Movie || /movies/ || fa fa-film
 
@@ -138,7 +138,7 @@ cover:
   # 是否顯示文章封面
   index_enable: true
   aside_enable: true
-  archives_enable: true
+  archives_enable: left
   # 封面顯示的位置
   # 三個值可配置 left , right , both
   position: both
@@ -160,9 +160,9 @@ error_404:
 
 post_meta:
   page:
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     categories: true # true or false 文章頁是否顯示分類

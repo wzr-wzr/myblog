@@ -1,0 +1,8 @@
+class:
+  class_name: ME
+  link_list:
+    1:
+      name: 微信公众号
+      link: https://blog.xxx.com
+      avatar: https://cdn.xxxxx.top/avatar.png
+      descr: xxxxxxx

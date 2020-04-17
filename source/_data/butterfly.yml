@@ -6,14 +6,12 @@
 #   xxx || 連結 || icon
 menu:
   首页: / || fa fa-home
-  文章: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  链接: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
-  另||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  文章: / || fa fa-archive
+  标签: / || fa fa-tags
+  分类: / || fa fa-folder-open
+  链接: / || fa fa-link
+  关于: / || fa fa-heart
+  
 
 # Favicon
 # ---------------
@@ -184,7 +182,7 @@ auto_open_sidebar:
   enable: true
 
 post_copyright:
-  enable: true
+  enable: flase
   decode: false
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/

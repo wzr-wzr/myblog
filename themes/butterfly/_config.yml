@@ -638,6 +638,12 @@ note:
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
+    {% note default %}
+  default 提示块标签
+  {% endnote %}
+  {% note primary no-icon %}
+  primary 提示块标签
+  {% endnote %}
 
 # 圖片懶加載
 # https://github.com/aFarkas/lazysizes

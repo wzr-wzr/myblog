@@ -6,11 +6,11 @@
 #   xxx || 連結 || icon
 menu:
   首页: / || fa fa-home
-  文章: / || fa fa-archive
-  标签: / || fa fa-tags
-  分类: / || fa fa-folder-open
-  链接: / || fa fa-link
-  关于: / || fa fa-heart
+  文章: /archives/ || fa fa-archive
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-folder-open
+  链接: /link/  || fa fa-link
+  关于: /about/ || fa fa-heart
   
 
 # Favicon

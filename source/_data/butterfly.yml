@@ -283,9 +283,9 @@ utterances:
 
 #####     Footer Settings    ####
 # ------------------------------------
-since: 2020
+since: 2020 By SHIWU
 
-footer_custom_text:
+footer_custom_text:Hi Welcome To My Blog
 
 footer_copyright:
   enable: true
@@ -515,7 +515,7 @@ fontawesome_v5:
 aside:
   enable: true
   mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
-  position: right # left or right
+  position: left # left or right
   card_author: true
   card_announcement:
     enable: true
@@ -549,7 +549,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 3/4/2020 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -557,9 +557,9 @@ runtimeshow:
 translate:
   enable: true
   # 默認按鈕顯示文字
-  default: 繁
+  default: 简
   #網站默認語言，1: 繁體中文, 2: 簡體中文
-  defaultEncoding: 2
+  defaultEncoding: 1
   #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
   translateDelay: 0
   #博客網址
@@ -582,7 +582,7 @@ darkmode:
   # autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: 2  只按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: false 取消自動切換
-  autoChangeMode: 1
+  autoChangeMode: flase
 
 ####    other     ####
 #------------------------------------------------
@@ -632,12 +632,20 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
-  icons: true
+  style: simple
+  icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
+  {% note [class] [no-icon] %}
+  Any content (support inline tags too.io).
+  {% endnote %}
+
+  [class]   : default | primary | success | info | warning | danger.
+  [no-icon] : Disable icon in note.
+
+   All parameters are optional.
 
 # 圖片懶加載
 # https://github.com/aFarkas/lazysizes

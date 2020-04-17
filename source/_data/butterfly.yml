@@ -632,20 +632,18 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
+  style: flag
   icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
-  {% note [class] [no-icon] %}
-  Any content (support inline tags too.io).
+  {% note default %}
+  default 提示块标签
   {% endnote %}
-
-  [class]   : default | primary | success | info | warning | danger.
-  [no-icon] : Disable icon in note.
-
-   All parameters are optional.
+  {% note primary no-icon %}
+  primary 提示块标签
+  {% endnote %}
 
 # 圖片懶加載
 # https://github.com/aFarkas/lazysizes

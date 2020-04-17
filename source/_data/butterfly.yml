@@ -60,7 +60,7 @@ social:
 # Algolia search
 # ---------------
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
 
@@ -197,29 +197,26 @@ auto_excerpt:
 ####    Share System    ####
 # -----------------------------------------
 addThis:
-  enable: false
-  pubid:
+  enable: true
+  pubid: 你的pub-id
 
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq
 
 # https://www.addtoany.com/
 addtoany:
   enable: false
   item:
-    - facebook
-    - twitter
     - wechat
     - sina_weibo
-    - facebook_messenger
     - email
     - copy_link
 
 ####   Comments System    ####
 # ------------------------------------
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: false # top_img顯示評論數
 
@@ -399,9 +396,10 @@ tag_ui: # 留空或index
 # 顔色 background: '#49B202'
 # 留空 顯示白色
 background:
+url(https://i.loli.net/2020/04/17/fvDwoXRAHsuFKGd.jpg)
 
 # footer是否顯示圖片背景(與top_img一致)
-footer_bg: false
+footer_bg: true
 
 # 背景特效
 # 避免卡頓，建議只開啟一個
@@ -423,12 +421,12 @@ canvas_ribbon_piao:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
-  mobile: false # false 手機端不顯示 true 手機端顯示
+  mobile: true # false 手機端不顯示 true 手機端顯示
 
 # 打字效果
 activate_power_mode:
@@ -461,13 +459,13 @@ display_mode: light
 
 # 美化頁面顯示
 beautify:
-  enable: false
+  enable: true
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
 
 # 全局字體
 font:
-  enable: false
+  enable: true
   font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
   code-font: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
 
@@ -501,8 +499,7 @@ subtitle:
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+    - Don’t try so hard&#44the best things come when you least expect them to. 
 
 # fontawesome圖標
 # 默認使用的是 fontawesome v4版本的圖標
@@ -593,7 +590,7 @@ darkmode:
 #--------------------------------------------
 # medium_zoom https://github.com/francoischalifour/medium-zoom
 medium_zoom:
-  enable: false
+  enable: true
 
 # fancybox http://fancyapps.com/fancybox/3/
 fancybox:
@@ -604,7 +601,7 @@ fancybox:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' #light mode時彈窗背景
   bg_dark: '#2d3035' #dark mode時彈窗背景
@@ -638,9 +635,15 @@ note:
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
+
   {% note default %}
   default 提示块标签
   {% endnote %}
+
+  {% note default %}
+  default 提示块标签
+  {% endnote %}
+
   {% note primary no-icon %}
   primary 提示块标签
   {% endnote %}

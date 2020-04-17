@@ -38,7 +38,7 @@ highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
 
-code_word_wrap: false
+code_word_wrap: true
 
 # copy setting
 # 是否禁止複製（如果禁止，highlight_copy的功能將無效)
@@ -60,7 +60,7 @@ social:
 # Algolia search
 # ---------------
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
 
@@ -138,7 +138,7 @@ cover:
   # 是否顯示文章封面
   index_enable: true
   aside_enable: true
-  archives_enable: true
+  archives_enable: left
   # 封面顯示的位置
   # 三個值可配置 left , right , both
   position: both
@@ -154,15 +154,15 @@ lodding_bg:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: '努力过后依旧没有找到页面'
   background:
 
 post_meta:
   page:
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     categories: true # true or false 文章頁是否顯示分類
@@ -197,29 +197,26 @@ auto_excerpt:
 ####    Share System    ####
 # -----------------------------------------
 addThis:
-  enable: false
-  pubid:
+  enable: true
+  pubid: 你的pub-id
 
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq
 
 # https://www.addtoany.com/
 addtoany:
   enable: false
   item:
-    - facebook
-    - twitter
     - wechat
     - sina_weibo
-    - facebook_messenger
     - email
     - copy_link
 
 ####   Comments System    ####
 # ------------------------------------
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: false # top_img顯示評論數
 
@@ -283,9 +280,9 @@ utterances:
 
 #####     Footer Settings    ####
 # ------------------------------------
-since: 2020
+since: 2020 By SHIWU
 
-footer_custom_text:
+footer_custom_text:Hi Welcome To My Blog
 
 footer_copyright:
   enable: true
@@ -399,9 +396,10 @@ tag_ui: # 留空或index
 # 顔色 background: '#49B202'
 # 留空 顯示白色
 background:
+url(https://i.loli.net/2020/04/17/fvDwoXRAHsuFKGd.jpg)
 
 # footer是否顯示圖片背景(與top_img一致)
-footer_bg: false
+footer_bg: true
 
 # 背景特效
 # 避免卡頓，建議只開啟一個
@@ -423,12 +421,12 @@ canvas_ribbon_piao:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
-  mobile: false # false 手機端不顯示 true 手機端顯示
+  mobile: true # false 手機端不顯示 true 手機端顯示
 
 # 打字效果
 activate_power_mode:
@@ -461,13 +459,13 @@ display_mode: light
 
 # 美化頁面顯示
 beautify:
-  enable: false
+  enable: true
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
 
 # 全局字體
 font:
-  enable: false
+  enable: true
   font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
   code-font: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
 
@@ -501,8 +499,7 @@ subtitle:
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+    - Don’t try so hard&#44the best things come when you least expect them to. 
 
 # fontawesome圖標
 # 默認使用的是 fontawesome v4版本的圖標
@@ -515,7 +512,7 @@ fontawesome_v5:
 aside:
   enable: true
   mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
-  position: right # left or right
+  position: left # left or right
   card_author: true
   card_announcement:
     enable: true
@@ -549,7 +546,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 3/4/2020 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -557,9 +554,9 @@ runtimeshow:
 translate:
   enable: true
   # 默認按鈕顯示文字
-  default: 繁
+  default: 简
   #網站默認語言，1: 繁體中文, 2: 簡體中文
-  defaultEncoding: 2
+  defaultEncoding: 1
   #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
   translateDelay: 0
   #博客網址
@@ -582,7 +579,7 @@ darkmode:
   # autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: 2  只按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: false 取消自動切換
-  autoChangeMode: 1
+  autoChangeMode: flase
 
 ####    other     ####
 #------------------------------------------------
@@ -593,7 +590,7 @@ darkmode:
 #--------------------------------------------
 # medium_zoom https://github.com/francoischalifour/medium-zoom
 medium_zoom:
-  enable: false
+  enable: true
 
 # fancybox http://fancyapps.com/fancybox/3/
 fancybox:
@@ -604,7 +601,7 @@ fancybox:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' #light mode時彈窗背景
   bg_dark: '#2d3035' #dark mode時彈窗背景
@@ -632,8 +629,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
-  icons: flase
+  style: flag
+  icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
@@ -642,7 +639,11 @@ note:
   {% note default %}
   default 提示块标签
   {% endnote %}
-  
+
+  {% note default %}
+  default 提示块标签
+  {% endnote %}
+
   {% note primary no-icon %}
   primary 提示块标签
   {% endnote %}

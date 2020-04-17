@@ -6,11 +6,11 @@
 #   xxx || 連結 || icon
 menu:
   首页: / || fa fa-home
-  文章: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  链接: /link/  || fa fa-link
-  关于: /about/ || fa fa-heart
+  文章: / || fa fa-archive
+  设计: / || fa fa-tags
+  分享: / || fa fa-folder-open
+  链接: / || fa fa-link
+  关于: / || fa fa-heart
   
 
 # Favicon
@@ -50,8 +50,8 @@ copy:
 #   icon: link || the description
 # ---------------
 social:
-  fa fa-github: https://github.com/jerryc127 || Github
-  fa fa-envelope: mailto:xxxxxxx@gmail.com || Email
+  fa fa-github: https://github.com/wzr-wzr/myblog || Github
+  fa fa-envelope: mailto:2021986471@qq.com || Email
   fa fa-rss: /atom.xml || RSS
 
 ####    search    ####

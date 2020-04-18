@@ -280,7 +280,7 @@ utterances:
 # ------------------------------------
 since: 2020 By SHIWU
 
-footer_custom_text:Hi Welcome To My Blog
+footer_custom_text: Hi Welcome To My Blog
 
 footer_copyright:
   enable: true
@@ -393,8 +393,7 @@ tag_ui: # 留空或index
 # 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
 # 顔色 background: '#49B202'
 # 留空 顯示白色
-background:
-url(https://i.loli.net/2020/04/17/fvDwoXRAHsuFKGd.jpg)
+background: url(https://i.loli.net/2020/04/17/fvDwoXRAHsuFKGd.jpg)
 
 # footer是否顯示圖片背景(與top_img一致)
 footer_bg: true
@@ -629,22 +628,11 @@ note:
   #  - disabled  disable all CSS styles import of note tag.
   style: flag
   icons: false
-  border_radius: 3
+  border_radius: 4
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-  {% note default %}
-  default 提示块标签
-  {% endnote %}
-
-  {% note default %}
-  default 提示块标签
-  {% endnote %}
-
-  {% note primary no-icon %}
-  primary 提示块标签
-  {% endnote %}
 
 # 圖片懶加載
 # https://github.com/aFarkas/lazysizes
